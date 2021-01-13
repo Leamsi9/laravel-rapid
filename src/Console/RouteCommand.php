@@ -47,7 +47,7 @@ class RouteCommand extends Command
         $boilerplateRedirect = "return redirect('blog');";
         $routesFilePath = $this->laravel['path'] . './../routes/web.php';
         $routesFileContent =file_get_contents($routesFilePath);
-        $winkRoutes = "\nRoute::get('/blog', [" . $controller . "::class, 'index');\nRoute::get('/blog/{slug}', [" . $controller . "::class, 'show');\n";
+        $winkRoutes = "\nRoute::get('/blog', [" . $controller . "::class, 'index']);\nRoute::get('/blog/{slug}', [" . $controller . "::class, 'show']);\n";
 
         $updatedFileContent = str_replace($boilerplateRoute,$boilerplateRedirect,$routesFileContent);
         file_put_contents($routesFilePath,$updatedFileContent);
@@ -57,6 +57,9 @@ class RouteCommand extends Command
             file_put_contents($routesFilePath, $winkRoutes, FILE_APPEND | LOCK_EX);
             $this->info("your blog's public routes have been added to your app's routes/web.php file");
         }
+
+        Route::get('/blog', [BlogController::class, 'index']);
+        Route::get('/blog/{slug}', [BlogController::class, 'show']);
     }
 
 
