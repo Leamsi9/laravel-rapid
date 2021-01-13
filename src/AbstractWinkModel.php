@@ -13,6 +13,6 @@ abstract class AbstractWinkModel extends Model
      */
     public function getConnectionName()
     {
-        return config('wink.database_connection');
+        return config('database_connection');
     }
 }
