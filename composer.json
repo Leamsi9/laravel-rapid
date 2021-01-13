@@ -1,6 +1,6 @@
 {
     "name": "leamsi9/rapid",
-    "description": "Minimum Viable Website and CMS: A CLI wrapper for Wink micro-CMS.",
+    "description": "Minimum Viable Website and CMS: A command line and front end wrapper for Wink micro-CMS.",
     "keywords": ["framework", "laravel", "blog"],
     "license": "MIT",
     "authors": [
