@@ -2,6 +2,7 @@
 
 namespace DummyNamespace;
 
+use Illuminate\Http\Request;
 use Wink\WinkAuthor;
 use Wink\WinkPost;
 
