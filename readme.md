@@ -1,3 +1,6 @@
+## Minimum Viable Website and CMS: A command line and front end wrapper for Wink micro-CMS. 
+####Generates Controller, Routes and Views linked to Wink posts.
+
 <p align="center"><img src="/art/header.png?1" alt="wink logo"></p>
 
 Wink adds a nice UI where you can manage a publication of any size with posts, pages, tags, and authors.
