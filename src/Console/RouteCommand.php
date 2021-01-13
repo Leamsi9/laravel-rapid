@@ -57,9 +57,6 @@ class RouteCommand extends Command
             file_put_contents($routesFilePath, $winkRoutes, FILE_APPEND | LOCK_EX);
             $this->info("your blog's public routes have been added to your app's routes/web.php file");
         }
-
-        Route::get('/blog', [BlogController::class, 'index']);
-        Route::get('/blog/{slug}', [BlogController::class, 'show']);
     }
 
 
