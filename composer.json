@@ -1,16 +1,16 @@
 {
-    "name": "themsaid/wink",
-    "description": "Wink Publishing Framework.",
+    "name": "leamsi9/rapid",
+    "description": "Minimum Viable Website and CMS: A CLI wrapper for Wink micro-CMS.",
     "keywords": ["framework", "laravel", "blog"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Mohamed Said",
-            "email": "mohamed@laravel.com"
+            "name": "Ismael Velasco",
+            "email": "beyond.coding0@gmail.com"
         }
     ],
     "require": {
-        "php": "^7.3||^7.4",
+        "php": "^7.3||^8.0",
         "laravel/framework": "^7.0||^8.0"
     },
     "autoload": {
