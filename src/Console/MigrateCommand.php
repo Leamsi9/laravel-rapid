@@ -23,7 +23,7 @@ class MigrateCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Run  migrations for Wink';
+    protected $description = 'Run database migrations for Wink';
 
     /**
      * Execute the console command.
@@ -34,8 +34,8 @@ class MigrateCommand extends Command
     {
 
         $this->call('migrate', [
-            '--database' => config('database_connection'),
-            '--path' => 'vendor/themsaid/wink/src/Migrations',
+            '--database' => config('wink.database_connection'),
+            '--path' => 'vendor/leamsi9/rapid/src/Migrations',
             '--force' => $this->option('force') ?? true,
         ]);
 
