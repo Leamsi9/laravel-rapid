@@ -70,8 +70,8 @@ class TeamController
         validator($data, [
             'meta.theme' => 'in:dark,light',
             'name' => 'required',
-            'slug' => 'required|'.Rule::unique(config('wink.database_connection').'.wink_authors', 'slug')->ignore(request('id')),
-            'email' => 'required|email|'.Rule::unique(config('wink.database_connection').'.wink_authors', 'email')->ignore(request('id')),
+            'slug' => 'required|'.Rule::unique(config('database_connection').'.wink_authors', 'slug')->ignore(request('id')),
+            'email' => 'required|email|'.Rule::unique(config('database_connection').'.wink_authors', 'email')->ignore(request('id')),
         ])->validate();
 
         $entry = $id !== 'new' ? WinkAuthor::findOrFail($id) : new WinkAuthor(['id' => request('id')]);
