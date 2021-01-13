@@ -47,7 +47,7 @@ class RouteCommand extends Command
         $boilerplateRedirect = "return redirect('blog');";
         $routesFilePath = $this->laravel['path'] . './../routes/web.php';
         $routesFileContent =file_get_contents($routesFilePath);
-        $winkRoutes = "\nRoute::get('/blog', [" . $controller . "::class, 'index']);\nRoute::get('/blog/{slug}', [" . $controller . "::class, 'show']);\n";
+        $winkRoutes = "\nRoute::get('/blog', [App\Http\Controllers\\" . $controller . "::class, 'index']);\nRoute::get('/blog/{slug}', [App\Http\Controllers\\" . $controller . "::class, 'show']);\n";
 
         $updatedFileContent = str_replace($boilerplateRoute,$boilerplateRedirect,$routesFileContent);
         file_put_contents($routesFilePath,$updatedFileContent);
