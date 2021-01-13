@@ -7,13 +7,11 @@ return [
     |--------------------------------------------------------------------------
     |
     | This is the database connection you want Wink to use while storing &
-    | reading your content. By default Wink assumes you've prepared a
-    | new connection called "wink". However, you can change that
-    | to anything you want.
+    | reading your content. By default rapid assumes you are using your app's main database connection, but you can change that here.
     |
     */
 
-    'database_connection' => env('WINK_DB_CONNECTION', 'wink'),
+    'database_connection' => env('DB_CONNECTION'),
 
     /*
     |--------------------------------------------------------------------------
