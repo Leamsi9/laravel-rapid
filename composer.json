@@ -1,0 +1,36 @@
+{
+    "name": "leamsi9/rapid",
+    "description": "Minimum Viable Website and CMS: A command line and front end wrapper for Wink micro-CMS.",
+    "keywords": ["framework", "laravel", "blog"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ismael Velasco",
+            "email": "beyond.coding0@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3||^8.0",
+        "laravel/framework": "^7.0||^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wink\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Wink\\WinkServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

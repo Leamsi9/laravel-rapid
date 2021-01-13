@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Wink\WinkAuthor;
+use Wink\WinkPost;
+
+class BlogController extends Controller
+{
+    public function index()
+    {
+        $author = WinkAuthor::first();
+        $posts = WinkPost::with('tags')
+            ->live()
+            ->orderBy('publish_date', 'DESC')
+            ->simplePaginate(12);
+        return view('blog.index', [
+            'author'=>$author,
+            'posts' => $posts,
+        ]);
+    }
+
+    public function show ($slug)
+    {
+        $post = WinkPost::live()->whereSlug($slug)->firstOrFail();
+
+        return view('post.index', [
+            'post' => $post
+        ]);
+    }
+}
