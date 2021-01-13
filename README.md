@@ -1,7 +1,7 @@
 ## Minimum Viable Website and CMS: A command line and front end wrapper for Wink micro-CMS. 
 
 ### Set up a fully function blog site and CMS in under 5 minutes
-####Generates Controller, Routes and Views linked to Wink posts.
+#### Generates Controller, Routes and Views linked to Wink posts.
 
 <p align="center"><img src="/art/header.png?1" alt="wink logo"></p>
 
