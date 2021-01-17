@@ -31,28 +31,25 @@ class RegisterCommand extends Command
      */
     public function handle()
     {
-        if (!WinkAuthor::count()) {
-            $name = $this->ask('What is your name?');
-            $emailInput = $this->ask('What is your email address?');
-            $passwordInput = $this->secret('Choose a password for your CMS?');
-            $bio = $this->ask('Type a brief author bio (you can always edit it in the CMS later)');
-            $email = $emailInput;
-            $password = $passwordInput;
+        $title = $this->ask("What is your blog's title?");
+        $emailInput = $this->ask('What is your email address?');
+        $passwordInput = $this->secret('Choose a password for your CMS?');
+        $bio = $this->ask('Type a brief author bio (you can always edit it in the CMS later)');
+        $email = $emailInput;
+        $password = $passwordInput;
 
-            $author = WinkAuthor::create([
-                'id' => (string)Str::uuid(),
-                'name' => $name,
-                'slug' => preg_replace("/[\s]+/", "-", $name),
-                'bio' => $bio,
-                'email' => $email,
-                'password' => Hash::make($password),
-            ]);
+        $author = WinkAuthor::create([
+            'id' => (string)Str::uuid(),
+            'name' => $title,
+            'slug' => preg_replace("/[\s]+/", "-", $title),
+            'bio' => $bio,
+            'email' => $email,
+            'password' => Hash::make($password),
+        ]);
 
-            $this->line('');
-            $this->info('Your details have been stored in the author table');
-            $this->line("You may log into your CMS at the /wink  endpoint using <info> $author->email </info> and your chosen password");
-
-        }
+        $this->line('');
+        $this->info('Your details have been stored in the author table');
+        $this->line("You may log into your CMS at the /wink  endpoint using <info> $author->email </info> and your chosen password");
 
     }
 }
