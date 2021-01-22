@@ -15,7 +15,7 @@ class RegisterCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'wink:register';
+    protected $signature = 'rapid:register';
 
     /**
      * The console command description.

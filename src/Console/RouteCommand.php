@@ -18,7 +18,7 @@ class RouteCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'wink:route {controller=BlogController}';
+    protected $signature = 'rapid:route {controller=BlogController}';
 
     /**
      * The console command description.

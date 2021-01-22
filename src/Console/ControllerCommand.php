@@ -18,7 +18,7 @@ class ControllerCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'wink:controller {name=BlogController}';
+    protected $signature = 'rapid:controller {name=BlogController}';
 
     /**
      * The console command description.

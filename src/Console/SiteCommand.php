@@ -11,7 +11,7 @@ class SiteCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'wink:site';
+    protected $signature = 'rapid:site';
 
     /**
      * The console command description.

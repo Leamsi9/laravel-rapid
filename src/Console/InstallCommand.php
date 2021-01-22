@@ -11,7 +11,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'wink:install';
+    protected $signature = 'rapid:install';
 
     /**
      * The console command description.

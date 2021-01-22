@@ -15,7 +15,7 @@ class MigrateCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'wink:migrate {email?} {password?}
+    protected $signature = 'rapid:migrate {email?} {password?}
                 {--force : Force the operation to run when in production}';
 
     /**

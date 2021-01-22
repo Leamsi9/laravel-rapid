@@ -18,7 +18,7 @@ class ViewCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'wink:view {directory=blog}';
+    protected $signature = 'rapid:view {directory=blog}';
 
     /**
      * The console command description.
