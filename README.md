@@ -1,6 +1,6 @@
 ## Laravel Rapid: A Minimum Viable Website in under 5 minutes with a single command.
 
-The biggest barrier to building a personal website and starting blogging is the initial friction. It takes a while to learn your way around, configure, set up and style a CMS, Jamstack platform or your own website and database. It's often enough for other priorities to win. I created Laravel Rapid to remove this friction.
+The biggest barrier to building a personal website and starting blogging is the initial friction. It takes a while to learn your way around, configure, set up and style a CMS, Jamstack platform or your own website and database. This can mean other priorities win and the journey is interrupted. Laravel Rapid removes this friction.
 
 With Laravel Rapid you could start a timer and, in under 5 minutes from absolute zero, have a personalised website, dockerised with a fully migrated database and a permissioned micro CMS, good enough for you to go live and start comfortably blogging. Being a Laravel scaffold, your Rapid website will be infinitely expandable into a full fledged site, a web application or SAAS in a familiar way. Whatever journey you have in mind, Laravel Rapid could be its first fully deployable increment, that elusive first step.
 
