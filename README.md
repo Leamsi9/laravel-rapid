@@ -42,11 +42,13 @@ Go back to localhost and hard refresh, and you should be redirected to `/blog` w
 If you now go to `localhost/wink` you will be able to log in and write a blog post, that will appear on your `localhost/blog` page.
 
 ## Credits
-- [Ismael Velasco](https://github.com/Leamsi9)
+- [Ismael Velasco](https://github.com/Leamsi9) - creator of Rapid
 - [Mohamed Said](https://github.com/themsaid) - created Wink , which is, with minor modifications, the CMS used by Rapid.
 - [All contributors](https://github.com/Leamsi9/laravel-rapid/contributors)
 
 ## Contributing
+
+Contributions are extremely welcome, and there are a few good first issues. 
 
 Check the [contribution guide](CONTRIBUTING.md).
 
