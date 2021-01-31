@@ -1,8 +1,11 @@
-## WIP: Minimum Viable Website and CMS: A command line and front end wrapper for Wink micro-CMS. 
+## Laravel Rapid: A Minimum Viable Website in under 5 minutes with a single command.
 
-### Set up a fully function blog site and CMS in under 5 minutes
+The biggest barrier to building a personal website and starting blogging is the initial friction. It takes a while to learn your way around, configure, set up and style a CMS, Jamstack platform or your own website and database. It's often enough for other priorities to win. I created Laravel Rapid to remove this friction.
 
-#### Generates Controller, Routes and Views linked to Wink posts.
+With Laravel Rapid you could start a timer and, in under 5 minutes from absolute zero, have a personalised website, dockerised with a fully migrated database and a permissioned micro CMS, good enough for you to go live and start comfortably blogging. Being a Laravel scaffold, your Rapid website will be infinitely expandable into a full fledged site, a web application or SAAS in a familiar way. Whatever journey you have in mind, Laravel Rapid could be its first fully deployable increment, that elusive first step.
+
+
+Laravel Rapid uses a CLI command (`rapid:site`) to receive basic details from you and generate a personalised website with Controller, Routes and Views and a bundled, modified version of [Wink](https://github.com/themsaid/wink) micro CMS, accessed via login with your email address and encrypted password.
 
 ## Installation instructions
 
@@ -40,10 +43,8 @@ If you now go to `localhost/wink` you will be able to log in and write a blog po
 
 ## Credits
 - [Ismael Velasco](https://github.com/Leamsi9)
-- [Mohamed Said](https://github.com/themsaid) - created Wink , that is, with minor modifications, the CMS used by Rapid.
+- [Mohamed Said](https://github.com/themsaid) - created Wink , which is, with minor modifications, the CMS used by Rapid.
 - [All contributors](https://github.com/Leamsi9/laravel-rapid/contributors)
-
-Special thanks to [Caneco](https://twitter.com/caneco) for the logo ✨
 
 ## Contributing
 
