@@ -1,7 +1,7 @@
 {
     "name": "leamsi9/rapid",
-    "description": "Minimum Viable Website and CMS: A command line and front end wrapper for Wink micro-CMS.",
-    "keywords": ["framework", "laravel", "blog"],
+    "description": "A CLI driven Minimum Viable Website and micro-CMS generator.",
+    "keywords": ["CMS", "Website", "Scaffolding", "Laravel", "Blog", "Generator"],
     "license": "MIT",
     "authors": [
         {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Wink\\": "src/"
+            "Rapid": "src/"
         }
     },
     "extra": {
@@ -30,6 +30,11 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Rapid\\ComposerInstallMessage::postPackageInstall",
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true
