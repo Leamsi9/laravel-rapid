@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "Ismael Velasco",
-            "email": "beyond.coding0@gmail.com"
+            "email": "ismael@ismaelvelasco.dev"
         }
     ],
     "require": {
@@ -33,7 +33,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Rapid\\ComposerInstallMessage::postPackageInstall",
+            "Rapid\\ComposerInstallMessage::postPackageInstall"
         ]
     },
     "minimum-stability": "dev",
