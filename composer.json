@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rapid/": "src/"
+            "Rapid\\": "src/"
         }
     },
     "extra": {
@@ -33,7 +33,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Rapid\ComposerInstallMessage::postPackageInstall"
+            "Rapid\\ComposerInstallMessage::postPackageInstall"
         ]
     },
     "minimum-stability": "dev",
