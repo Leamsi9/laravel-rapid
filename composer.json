@@ -24,7 +24,7 @@
         },
         "laravel": {
             "providers": [
-                "Wink\\WinkServiceProvider"
+                "Rapid\\WinkServiceProvider"
             ]
         }
     },
