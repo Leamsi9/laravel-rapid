@@ -29,7 +29,7 @@ And when you require Rapid, add it like:
 "Leamsi9/rapid": "*@dev"
 ```
 
-Run `composer update` in your laravel project, then `php artisan rapid:install`, and then `php artisan rapid:migrate`. Now you have Rapid running in your laravel project using the files on your machine.
+Run `composer update` in your laravel project, then `php artisan rapid:site`. Now you have Rapid running in your laravel project using the files on your machine.
 
 *[add yarn instructions]*
 
