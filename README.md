@@ -54,4 +54,4 @@ Check the [contribution guide](CONTRIBUTING.md).
 
 ## License
 
-Wink is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Laravel Rapid is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
