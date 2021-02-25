@@ -65,10 +65,10 @@
         @foreach($posts as $post)
 
             <article class="flex flex-col shadow my-4">
-                {{--                <!-- Article Image -->--}}
-                {{--                <a href="#" class="hover:opacity-75">--}}
-                {{--                    <img src="{{ $post->featured_image }}">--}}
-                {{--                </a>--}}
+                <!-- Article Image -->
+                <a href="#" class="hover:opacity-75">
+                    <img src="{{ $post->featured_image }}">
+                </a>
                 <div class="bg-black-900 flex flex-col  justify-start p-6">
                     <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">{{ $post->tag }}</a>
                     <a href="/blog/{{ $post->slug }}"
