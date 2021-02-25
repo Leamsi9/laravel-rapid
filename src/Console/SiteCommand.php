@@ -28,25 +28,25 @@ class SiteCommand extends Command
     public function handle()
     {
         $this->comment("Welcome to your site's birth!");
-        $this->call('wink:install');
-        $this->call('wink:migrate');
+        $this->call('rapid:install');
+        $this->call('rapid:migrate');
 
         $this->comment("Creating storage links");
         $this->call('storage:link');
 
         $this->comment("Please register your details to access your CMS");
-        $this->call('wink:register');
+        $this->call('rapid:register');
 
         $this->comment('Building BlogController...');
-        $this->call('wink:controller');
+        $this->call('rapid:controller');
 
 
         $this->comment('Building /blog route...');
-        $this->call('wink:route');
+        $this->call('rapid:route');
 
 
         $this->comment('Publishing public blog views...');
-        $this->call('wink:view');
+        $this->call('rapid:view');
 
         $this->line('Your website is ready for use. Enjoy!');
 
