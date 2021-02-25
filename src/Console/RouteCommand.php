@@ -11,7 +11,7 @@ class RouteCommand extends Command
      *
      * @var string
      */
-    protected $name = 'wink:route';
+    protected $name = 'rapid:route';
 
     /**
      * The name and signature of the console command.

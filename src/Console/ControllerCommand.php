@@ -11,7 +11,7 @@ class ControllerCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'wink:controller';
+    protected $name = 'rapid:controller';
 
     /**
      * The name and signature of the console command.

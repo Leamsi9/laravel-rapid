@@ -11,7 +11,7 @@ class ViewCommand extends Command
      *
      * @var string
      */
-    protected $name = 'wink:view';
+    protected $name = 'rapid:view';
 
     /**
      * The name and signature of the console command.

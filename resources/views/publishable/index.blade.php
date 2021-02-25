@@ -65,17 +65,15 @@
         @foreach($posts as $post)
 
             <article class="flex flex-col shadow my-4">
-                {{--                <!-- Article Image -->--}}
-                {{--                <a href="#" class="hover:opacity-75">--}}
-                {{--                    <img src="{{ $post->featured_image }}">--}}
-                {{--                </a>--}}
                 <div class="bg-black-900 flex flex-col  justify-start p-6">
-                    <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">{{ $post->tag }}</a>
                     <a href="/blog/{{ $post->slug }}"
                        class="text-green-500 text-3xl font-bold hover:text-pink-500 pb-3"> {{ $post->title }} </a>
-                    <p href="#" class="text-sm pb-8">
-                        By <a href="#" class="font-semibold hover:text-gray-800">{{ $author->name }}</a>, Published
-                        on {{ $post->publish_date }}
+                    <!-- Article Image -->
+                    <a href="#" class="hover:opacity-75 pb-2">
+                        <img src="{{ $post->featured_image }}">
+                    </a>
+                    <p href="#" class="text-purple-500 text-xs pb-5">
+                        By <a href="#" class="font-semibold hover:text-gray-800">{{ $author->name }}, published {{ date('d-m-Y', strtotime($post->publish_date)) }}</a>
                     </p>
                     <a href="#" class="text-red-600 pb-3">{!! $post->body !!}</a>
                     <a href="#" class="uppercase text-yellow-600 hover:text-purple-700">Continue Reading <i
@@ -102,16 +100,9 @@
         </div>
 
         <div class="w-full bg-black shadow flex flex-col my-4 p-6">
-            <p class="text-xl text-red-600 font-semibold pb-5">Topics</p>
-            <div class="grid grid-cols-2 gap-1">
-                @foreach($tags as $tag)
-                    <span class="text-green-500"> {{$tag->name}} </span>
-                    <br>
-                @endforeach
-            </div>
             <a href="#"
                class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
-                <i class="fab fa-twitter mr-2"></i> Follow @ {{$author->slug}}
+                <i class="fab fa-twitter mr-2"></i> Follow @ {{$author->name}}
             </a>
         </div>
 
