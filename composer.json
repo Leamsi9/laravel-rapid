@@ -1,0 +1,41 @@
+{
+    "name": "leamsi9/rapid",
+    "description": "A CLI driven Minimum Viable Website and micro-CMS generator.",
+    "keywords": ["CMS", "Website", "Scaffolding", "Laravel", "Blog", "Generator"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ismael Velasco",
+            "email": "ismael@ismaelvelasco.dev"
+        }
+    ],
+    "require": {
+        "php": "^7.3||^8.0",
+        "laravel/framework": "^7.0||^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rapid\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Rapid\\WinkServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "printf  '\\033[35m\\033 Congratulations!\n\n You have successfully added \\033[36m\\033 Laravel Rapid \\033[35m\\033 to your application.  If you are using Laravel Sail as a docker environment, run \\033[33m\\033 ./vendor/bin/sail artisan rapid:site \\033[35m\\033 and answer the prompts, and your website will be fully scaffolded and ready to deploy, already  viewable on \\033[33m\\033 localhost\\033[35m\\033. If you go to \\033[33m\\033 localhost/wink \\033[35m\\033 you will be able to login to the Wink micro CMS and start blogging! \n \n If you are not using sail or docker, before running \\033[33m\\033 php artisan rapid:site \\033[35m\\033 you will need to set up your database. Once that is done if you run that command and answer the queries your site will be scaffolded and ready to deploy. You can and serve it locally with the command \\033[33m\\033 php artisan serve\\033[35m\\033.\n\n After the \\033[33m\\033 artisan rapid:site \\033[35m\\033 command has been run, you can further customise your site. Run \\033[33m\\033 artisan rapid:help \\033[35m\\033 to see the options. \n \n'"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
